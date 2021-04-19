@@ -21,7 +21,7 @@ Author: Claudia dos Anjos - Student ID 20220111
 	background-color: #1abc9c;
 	border-radius: 50%;
 	position: relative;
-	top: 30px;
+	top: 50px;
 	left: 260px;
 }
 
@@ -76,7 +76,7 @@ Author: Claudia dos Anjos - Student ID 20220111
 	flex-grow: 1;
 	position: relative;
 	top: 80px;
-	left: 140px;
+	left: -60px;
 	font-family: Fira Sans, sans-serif;
 }
 
