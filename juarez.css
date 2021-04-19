@@ -3,6 +3,20 @@ juarez.css
 Author: Juarez Barbosa Junior - Student ID 20197080 
 */
 
+/* configuration of flex box layout container*/ 
+.container {
+	display: flex;
+}
+
+
+/* styling for container div x - flex box layout info */
+.container > div {
+	font-size: 1.5vw;
+	font-family: Fira-Sans;
+	padding: 0.25em;
+	color: #1abc9c;
+}
+
 /* styling for the header element - custom color */
 h1,
 h2,
@@ -11,6 +25,7 @@ h3 {
 	font-family: Fira Sans, sans-serif;
 }
 
+/* styling for the main logo - flex box layout info, image, etc */
 .main_logo {
 	width: 150px;
 	height: 150px;
@@ -20,6 +35,7 @@ h3 {
 	background-size: contain;
 }
 
+/* styling for the oval effect element in the home page  - flex box layout info, image,color,  etc */
 .oval {
 	height: 450px;
 	width: 900px;
@@ -30,6 +46,7 @@ h3 {
 	left: 280px;
 }
 
+/* styling for the rectangle effect element in the about page - flex box layout info, image,color,  etc */
 .rectangle {
 	height: 330px;
 	width: 600px;
@@ -39,18 +56,21 @@ h3 {
 	left: 450px;
 }
 
+/* styling for title element - flex box layout info */
 .festival_home_title {
 	position: relative;
 	top: 40px;
 	left: 20px;
 }
 
+/* styling for date element - flex box layout info */
 .festival_home_date {
 	position: relative;
 	top: 5px;
 	left: 250px;
 }
 
+/* styling for location element - flex box layout info */
 .festival_location_box {
 	align-items: flex-start;
 	align-content: center; /* cross Y */
@@ -61,6 +81,7 @@ h3 {
 	left: 130px;
 }
 
+/* styling for date box element - flex box layout info */
 .festival_date_box {
 	align-items: flex-end;
 	align-content: center; /* cross Y */
@@ -71,6 +92,7 @@ h3 {
 	left: 50px;
 }
 
+/* styling for email box in contact us - flex box layout, font family info */
 .email_box_contact_us {
 	align-items: center;
 	align-content: center; /* cross Y */
@@ -82,6 +104,7 @@ h3 {
 	font-family: Fira Sans, sans-serif;
 }
 
+/* styling for email box in home - flex box layout, font family info */
 .email_box_home {
 	align-items: center;
 	align-content: center; /* cross Y */

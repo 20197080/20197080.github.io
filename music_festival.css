@@ -28,6 +28,7 @@ body {
 	);
 }
 
+/* styling for figure element - parameters for img */
 figure {
 	width: 200px;
 	overflow: hidden;
