@@ -38,5 +38,6 @@ Author: Shane Connor - Student ID 20219598
 	align-items: center;
 	align-content: center; /* cross Y */
 	justify-content: center; /* axis X */
-	flex-grow: 1;
+	flex-grow: 2;
 }
+
