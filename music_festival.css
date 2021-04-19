@@ -1,0 +1,170 @@
+/*
+music_festival.css
+Author: Juarez Barbosa Junior - Student ID 20197080 
+*/
+
+/* remove text decoration from hyperlinks */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+/* background gradient */
+body {
+	background-image: linear-gradient(
+		to top,
+		#d16d6b,
+		#de8168,
+		#e79767,
+		#ecad69,
+		#ecc571,
+		#d1d175,
+		#b2dc85,
+		#8fe49e,
+		#38ddc1,
+		#00d1e4,
+		#00c0fb,
+		#5faafb
+	);
+}
+
+figure {
+	width: 200px;
+	overflow: hidden;
+	margin: 0;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+.custom_font_festival_name {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	position: relative;
+	top: -20px;
+	left: 60px;
+}
+
+.custom_font {
+	font-family: Fira Sans, sans-serif;
+	font-size: 30px;
+	color: black;
+}
+
+.custom_font_word_cloud {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	top: 10px;
+	left: 80px;
+}
+
+.custom_font_word_cloud_position_1 {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	position: relative;
+	top: 20px;
+	left: 230px;
+}
+
+.custom_font_word_cloud_position_2 {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	position: relative;
+	top: 10px;
+	left: 180px;
+}
+
+.custom_font_word_cloud_position_3 {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	position: relative;
+	top: 60px;
+	left: 380px;
+}
+
+.custom_font_word_cloud_position_4 {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	position: relative;
+	top: 90px;
+	left: 30px;
+}
+
+.custom_font_word_cloud_position_5 {
+	font-family: Fira Sans, sans-serif;
+	font-size: 23px;
+	color: black;
+	position: relative;
+    top: -10px;
+	left: 70px;
+}
+
+.change-ratio img {
+	margin: -20% 0;
+}
+
+/* initializes the flex box layout  */
+.container {
+	display: flex;
+}
+
+.festival_common_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+
+.festival_label_box {
+	align-items: center;
+	align-content: flex-start; /* cross Y */
+	justify-content: left; /* axis X */
+	flex-grow: 1;
+	font-family: Fira-Sans;
+}
+
+.festival_location_box {
+	align-items: flex-start;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 2;
+}
+
+.festival_bands_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+
+.festival_painted_box {
+	background-color: #f67313;
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+
+.festival_date_box {
+	align-items: flex-end;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 2;
+}
+
+.container > div {
+	font-size: 1.5vw;
+	font-family: Fira-Sans;
+	padding: 0.25em;
+	color: #f67313;
+}
+

@@ -1,0 +1,123 @@
+<!-- Author: Juarez Barbosa Junior - Student ID 20197080 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Festival Home page -->
+		<meta name="description" content="Festival Portal - Landing Page" />
+		<!-- web page title -->
+		<title>Home</title>
+		<!-- Authors: Juarez, Claudia, Shane -->
+		<meta name="author" content="Juarez, Claudia, Shane" />
+		<!--responsive design adjustments-->
+		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+		<!-- Character set -->
+		<meta charset="utf-8" />
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!-- Rock and Pop JS file-->
+		<script src="music_festival.js"></script>
+		<!-- Font Awesome icons (free version) -->
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="css/styles.css" rel="stylesheet" />
+
+		<!-- Juarez's CSS file -->
+		<link rel="stylesheet" type="text/css" href="juarez.css" />
+		<!-- Rock and Pop CSS file -->
+		<link rel="stylesheet" type="text/css" href="music_festival.css" />
+
+		<!-- jquery related CSSes-->
+		<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="jquery-ui.theme.css" />
+		<!-- overhang - a JQuery plugin to my custom notifications and prompts -->
+		<link rel="stylesheet" type="text/css" href="overhang.min.css" />
+		<!-- jQuery related JS files -->
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="jquery.validate.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<!--overhang js file -->
+		<script type="text/javascript" src="overhang.min.js"></script>
+	</head>
+	<!-- body onload event with login successful message after authentication -->
+	<body onload="loginSuccessfulHome()">
+		<form>
+			<table>
+				<th id="heading"></th>
+				<tr>
+					<div class="container">
+						<div class="festival_label_box">
+							<a class="custom_font" href="home.html">HOME</a>
+						</div>
+						<div class="festival_label_box">
+							<a class="custom_font" href="ticket.html">TICKETS</a>
+						</div>
+						<div class="festival_label_box">
+							<a class="custom_font" href="line_up.html">LINE UP</a>
+						</div>
+						<div class="festival_label_box">
+							<a class="custom_font" href="contact_us.html">CONTACT US</a>
+						</div>
+					</div>
+				</tr>
+
+			
+
+				<div class="oval">	
+					
+					<div class="container">
+						<div class="festival_common_box"></div>
+						<div class="festival_date_box">
+							<p class="custom_font_festival_name">ROCK AND POP FESTIVAL</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="festival_common_box"></div>
+						<div class="festival_home_title">
+							<figure class="change-ratio">
+								<img class="main_logo" src="festival_name.png" alt="Rock and Pop Festival" />
+							</figure>
+						</div>
+						<div class="festival_common_box"></div>
+					</div>
+
+					<div class="container">
+						<div class="festival_location_box">
+							<figure class="change-ratio">
+								<img src="location.png" alt="Dublin, Ireland" />
+							</figure>
+						</div>
+						<div class="festival_common_box"></div>
+						<div class="festival_date_box">
+							<figure class="change-ratio">
+								<img src="date.png" alt="April 20th 2021" />
+							</figure>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="festival_common_box"></div>
+					<div class="email_box_home">
+						<input
+							type="email"
+							id="email"
+							name="email"
+							size="100"
+							value="Sign up for updates: enter your email address here and press Enter"
+						/>
+					</div>
+					<div class="festival_common_box"></div>
+				</div>
+			</table>
+		</form>
+	</body>
+</html>

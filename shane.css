@@ -1,0 +1,42 @@
+/*
+shane.css
+Author: Shane Connor - Student ID 20219598
+*/
+.img_round {
+	border-radius: 50%;
+	width: 200px;
+}
+
+.festival_bands_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+.email_box_tickets {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+	position: relative;
+	top: 5px;
+	left: 150px;
+	font-family: Fira Sans, sans-serif;
+}
+
+.festival_tickets_actions {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+	position: relative;
+	top: 5px;
+	left: 300px;
+}
+
+.festival_common_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}

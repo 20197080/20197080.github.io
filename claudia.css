@@ -1,0 +1,88 @@
+/*
+claudia.css
+Author: Claudia dos Anjos - Student ID 20220111 
+*/
+
+.festival_home_title {
+	position: relative;
+	top: 15px;
+	left: 10px;
+}
+
+.festival_bands {
+	position: relative;
+	top: 80px;
+	left: 40px;
+}
+
+.oval_lineup {
+	height: 380px;
+	width: 975px;
+	background-color: #f67313;
+	border-radius: 50%;
+	position: relative;
+	top: 30px;
+	left: 260px;
+}
+
+.change-ratio img {
+	margin: -20% 0;
+}
+
+.container {
+	display: flex;
+}
+
+.festival_common_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+
+.festival_bands_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+
+.festival_label_box {
+	align-items: center;
+	align-content: flex-start; /* cross Y */
+	justify-content: left; /* axis X */
+	flex-grow: 1;
+	font-family: Fira-Sans;
+}
+
+.festival_location_box {
+	align-items: flex-start;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 2;
+}
+
+.festival_date_box {
+	align-items: flex-end;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 2;
+}
+
+.email_box_lineup {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+	position: relative;
+	top: 80px;
+	left: 140px;
+	font-family: Fira Sans, sans-serif;
+}
+
+.container > div {
+	font-size: 1.5vw;
+	font-family: Fira-Sans;
+	padding: 0.25em;
+	color: #f67313;
+}
