@@ -33,7 +33,7 @@ h3 {
 .rectangle {
 	height: 330px;
 	width: 600px;
-	background-color: #f67313;
+	background-color: #1abc9c;
 	position: relative;
 	top: 50px;
 	left: 420px;
@@ -41,13 +41,13 @@ h3 {
 
 .festival_home_title {
 	position: relative;
-	top: 60px;
+	top: 40px;
 	left: 20px;
 }
 
 .festival_home_date {
 	position: relative;
-	top: 10px;
+	top: 5px;
 	left: 250px;
 }
 

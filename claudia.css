@@ -18,7 +18,7 @@ Author: Claudia dos Anjos - Student ID 20220111
 .oval_lineup {
 	height: 380px;
 	width: 975px;
-	background-color: #f67313;
+	background-color: #1abc9c;
 	border-radius: 50%;
 	position: relative;
 	top: 30px;
@@ -84,5 +84,5 @@ Author: Claudia dos Anjos - Student ID 20220111
 	font-size: 1.5vw;
 	font-family: Fira-Sans;
 	padding: 0.25em;
-	color: #f67313;
+	color: #1abc9c;
 }

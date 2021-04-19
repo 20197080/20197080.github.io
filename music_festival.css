@@ -147,7 +147,7 @@ img {
 }
 
 .festival_painted_box {
-	background-color: #f67313;
+	background-color: #1abc9c;
 	align-items: center;
 	align-content: center; /* cross Y */
 	justify-content: center; /* axis X */
@@ -165,6 +165,6 @@ img {
 	font-size: 1.5vw;
 	font-family: Fira-Sans;
 	padding: 0.25em;
-	color: #f67313;
+	color: #1abc9c;
 }
 
