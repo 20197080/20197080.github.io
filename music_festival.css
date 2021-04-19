@@ -28,19 +28,21 @@ body {
 	);
 }
 
-/* styling for figure element - parameters for img */
+/* styling for figure element  */
 figure {
 	width: 200px;
 	overflow: hidden;
 	margin: 0;
 }
 
+/* styling for img  element  */
 img {
 	width: 200px;
 	height: 200px;
 	display: block;
 }
 
+/* styling for festival name element - flex box layout info, font, etc */
 .custom_font_festival_name {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -50,12 +52,14 @@ img {
 	left: 60px;
 }
 
+/* styling for custom font */
 .custom_font {
 	font-family: Fira Sans, sans-serif;
 	font-size: 30px;
 	color: black;
 }
 
+/* styling for custom world cloud */
 .custom_font_word_cloud {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -64,6 +68,7 @@ img {
 	left: 80px;
 }
 
+/* styling for custom world cloud 1 */
 .custom_font_word_cloud_position_1 {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -73,6 +78,7 @@ img {
 	left: 230px;
 }
 
+/* styling for custom world cloud 2 */
 .custom_font_word_cloud_position_2 {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -82,6 +88,7 @@ img {
 	left: 180px;
 }
 
+/* styling for custom world cloud 3 */
 .custom_font_word_cloud_position_3 {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -91,6 +98,7 @@ img {
 	left: 380px;
 }
 
+/* styling for custom world cloud 4 */
 .custom_font_word_cloud_position_4 {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -100,6 +108,7 @@ img {
 	left: 30px;
 }
 
+/* styling for custom world cloud 5 */
 .custom_font_word_cloud_position_5 {
 	font-family: Fira Sans, sans-serif;
 	font-size: 23px;
@@ -109,6 +118,7 @@ img {
 	left: 70px;
 }
 
+/* styling for img change ratio - margin */
 .change-ratio img {
 	margin: -20% 0;
 }
@@ -118,6 +128,7 @@ img {
 	display: flex;
 }
 
+/* styling for common box - flex box layout */
 .festival_common_box {
 	align-items: center;
 	align-content: center; /* cross Y */
@@ -125,6 +136,7 @@ img {
 	flex-grow: 1;
 }
 
+/* styling for label box - flex box layout, font */
 .festival_label_box {
 	align-items: center;
 	align-content: flex-start; /* cross Y */
@@ -133,6 +145,7 @@ img {
 	font-family: Fira-Sans;
 }
 
+/* styling for location box - flex box layout */
 .festival_location_box {
 	align-items: flex-start;
 	align-content: center; /* cross Y */
@@ -140,6 +153,7 @@ img {
 	flex-grow: 2;
 }
 
+/* styling for bands box - flex box layout */
 .festival_bands_box {
 	align-items: center;
 	align-content: center; /* cross Y */
@@ -147,6 +161,7 @@ img {
 	flex-grow: 1;
 }
 
+/* styling for painted  box - flex box layout, color */
 .festival_painted_box {
 	background-color: #1abc9c;
 	align-items: center;
@@ -155,6 +170,7 @@ img {
 	flex-grow: 1;
 }
 
+/* styling for date box - flex box layout */
 .festival_date_box {
 	align-items: flex-end;
 	align-content: center; /* cross Y */
@@ -162,10 +178,17 @@ img {
 	flex-grow: 2;
 }
 
+
+/* configuration of flex box layout container*/ 
+.container {
+	display: flex;
+}
+
+
+/* styling for container div x - flex box layout info */
 .container > div {
 	font-size: 1.5vw;
 	font-family: Fira-Sans;
 	padding: 0.25em;
 	color: #1abc9c;
 }
-
