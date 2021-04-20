@@ -29,8 +29,20 @@
 		<link href="juarez.css" rel="stylesheet" />
 		<!-- Rock and Pop's CSS file-->
 		<link href="music_festival.css" rel="stylesheet" />
+
+		<!-- jquery related CSSes-->
+		<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="jquery-ui.theme.css" />
+		<!-- overhang - a JQuery plugin to my custom notifications and prompts -->
+		<link rel="stylesheet" type="text/css" href="overhang.min.css" />
+		<!-- jQuery related JS files -->
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="jquery.validate.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<!--overhang js file -->
+		<script type="text/javascript" src="overhang.min.js"></script>
 	</head>
-	<body id="page-top">
+	<body onload="loginSuccessfulContactUs();">
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
 			<div class="container">
@@ -72,7 +84,7 @@
 			</div>
 		</nav>
 
-		<!-- Portfolio Section-->
+		<!-- Content Section-->
 		<section class="page-section portfolio" id="portfolio">
 			<div class="rectangle">
 				<div class="container">
@@ -129,17 +141,23 @@
 			<div class="container">
 				<div class="festival_common_box"></div>
 				<div class="email_box_contact_us">
-					<input
-						type="email"
-						id="email"
-						name="email"
-						size="100"
-						value="Sign up for updates: enter your email address here and press Enter"
-					/>
+					<form
+						id="emailForm"
+						method="post"
+						action="./email_successful.html"
+						onsubmit="return validateEmail();"
+					>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							size="100"
+							value="Sign up for updates: enter your email address here and press Enter"
+						/>
+					</form>
 				</div>
 				<div class="festival_common_box"></div>
 			</div>
-
 		</section>
 
 		<!-- Footer-->
@@ -201,7 +219,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		<!-- Contact form JS-->
 		<script src="jqBootstrapValidation.js"></script>
-		<script src="contact_me.js"></script>
+
 		<!-- Core theme JS-->
 		<script src="js/scripts.js"></script>
 	</body>

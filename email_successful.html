@@ -25,8 +25,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
 		<!-- Bootstrap CSS file -->
 		<link href="bootstrap_styles.css" rel="stylesheet" />
-		<!-- Claudia's CSS file -->
-		<link href="claudia.css" rel="stylesheet" />
+		<!-- Juarez's CSS file -->
+		<link href="juarez.css" rel="stylesheet" />
 		<!-- Rock and Pop's CSS file-->
 		<link href="music_festival.css" rel="stylesheet" />
 
@@ -42,7 +42,7 @@
 		<!--overhang js file -->
 		<script type="text/javascript" src="overhang.min.js"></script>
 	</head>
-	<body onload="loginSuccessfulLineUp();">
+	<body id="page-top">
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
 			<div class="container">
@@ -84,60 +84,17 @@
 			</div>
 		</nav>
 
-		<!-- Content Section-->
+		<!-- Content Section - Email Sent -->
 		<section class="page-section portfolio" id="portfolio">
-			<table>
-				<th id="heading"></th>
-
+			<div class="rectangle">
 				<div class="container">
-					<div class="festival_common_box"></div>
-					<div class="festival_home_title">
-						<img src="festival_title_alone.png" alt="Pop and Rock Festival" />
+					<div class="festival_painted_box"></div>
+					<div class="festival_common_box">
+						<h2 class="custom_font">EMAIL SENT SUCESSFULLY!</h2>
 					</div>
-					<div class="festival_common_box"></div>
+					<div class="festival_painted_box"><img src="email_sent.png" alt="Email sent" /></div>
 				</div>
-
-				<div class="oval_lineup">
-					<div class="container">
-						<div class="festival_common_box"></div>
-						<div class="festival_bands">
-							<img src="bands.png" alt="Full line up" />
-						</div>
-						<div div class="festival_common_box">
-							<p class="custom_font_word_cloud">DMITRI VEGAS & LIKE MIKE</p>
-							<p class="custom_font_word_cloud_position_1">DAY DIN</p>
-							<p class="custom_font_word_cloud_position_2">TIESTO</p>
-							<p class="custom_font_word_cloud_position_3">AKASHA</p>
-							<p class="custom_font_word_cloud_position_4">DJ MAU</p>
-							<p class="custom_font_word_cloud_position_5">CHEMICAL BROTHERS</p>
-						</div>
-						<div class="festival_common_box"></div>
-					</div>
-				</div>
-
-				<tr>
-					<div class="container">
-						<div class="festival_common_box"></div>
-						<div class="email_box_lineup">
-							<form
-								id="emailForm"
-								method="post"
-								action="./email_successful.html"
-								onsubmit="return validateEmail();"
-							>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									size="100"
-									value="Sign up for updates: enter your email address here and press Enter"
-								/>
-							</form>
-						</div>
-						<div class="festival_common_box"></div>
-					</div>
-				</tr>
-			</table>
+			</div>
 		</section>
 
 		<!-- Footer-->

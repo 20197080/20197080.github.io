@@ -56,6 +56,15 @@ h3 {
 	left: 450px;
 }
 
+.rectangle_email_sent {
+	height: 110px;
+	width: 295px;
+	background-color: #1abc9c;
+	position: relative;
+	top: 50px;
+	left: 450px;
+}
+
 /* styling for title element - flex box layout info */
 .festival_home_title {
 	position: relative;
@@ -115,3 +124,5 @@ h3 {
 	left: 60px;
 	font-family: Fira Sans, sans-serif;
 }
+
+
