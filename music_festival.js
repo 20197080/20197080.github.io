@@ -3,7 +3,7 @@
 
 //function to validate the user name with custom overhang error messages
 function validateEmail() {    
-    var emailAddress = document.forms["emailAddressForm"]["emailAddress"].value.trim();
+    var emailAddress = document.forms["emailForm"]["email"].value.trim();
     if (emailAddress == "") {
         jQuery("form").overhang({
             type: "error",
