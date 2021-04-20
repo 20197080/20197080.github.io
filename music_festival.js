@@ -7,7 +7,7 @@ function validateEmail() {
     if (emailAddress == "") {
         jQuery("form").overhang({
             type: "error",
-            duration: 3,
+            duration: 2,
             message: "Please provide your email address!"
         });
         return false;
@@ -18,7 +18,7 @@ function validateEmail() {
 function loginSuccessfulHome() {
     jQuery("body").overhang({
         type: "success",
-        duration: 3,
+        duration: 2,
         message: "Welcome to Rock and Pop Festival - April 2021 in Dublin, Ireland!"
     });
 }
@@ -27,7 +27,7 @@ function loginSuccessfulHome() {
 function loginSuccessfulLineUp() {
     jQuery("body").overhang({
         type: "success",
-        duration: 3,
+        duration: 2,
         message: "Unique line-up with top worldwide DJs!"
     });
 }
@@ -36,7 +36,7 @@ function loginSuccessfulLineUp() {
 function loginSuccessfulTickets() {
     jQuery("body").overhang({
         type: "success",
-        duration: 3,
+        duration: 2,
         message: "Early Bird's promo last day, reserve your ticket now!"
     });
 }
@@ -45,7 +45,7 @@ function loginSuccessfulTickets() {
 function loginSuccessfulContactUs() {
     jQuery("body").overhang({
         type: "success",
-        duration: 3,
+        duration: 2,
         message: "Our events team is available 24 x 7 to support your queries!"
     });
 }
