@@ -22,14 +22,6 @@ Author: Shane Connor - Student ID 20219598
 	width: 200px;
 }
 
-/* styling for the bands box - flex box layout info */
-.festival_bands_box {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-}
-
 /* styling for the email box in tickets - flex box layout, font family info */
 .email_box_tickets {
 	align-items: center;
