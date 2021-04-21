@@ -5,11 +5,11 @@
 		<meta name="description" content="Festival Portal - Home" />
 		<!-- web page title -->
 		<title>Rock and Pop Festival - Home</title>
-		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live">
+		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live" />
 		<!-- Authors: Juarez, Claudia, Shane -->
 		<meta name="author" content="Juarez, Claudia, Shane" />
 		<!--responsive design adjustments-->
-		<meta name="viewport" content="height=device-height,width=device-width" />
+		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0" />
 		<!-- Character set -->
 		<meta charset="utf-8" />
 		<!-- Favicon-->
@@ -92,46 +92,38 @@
 		<section class="page-section portfolio" id="portfolio">
 			<div class="oval">
 				<div class="container">
-					<div class="festival_common_box"></div>
-					<div class="festival_date_box">
-						<p class="custom_font_festival_name">ROCK AND POP FESTIVAL</p>
+					<div class="festival_home_title">
+						<h2 class="custom_font_responsive">ROCK AND POP FESTIVAL</h2>
 					</div>
 				</div>
 
 				<div class="container">
 					<div class="festival_location_box">
-						<figure class="change-ratio">
-							<img src="location.png" alt="Dublin, Ireland" />
-						</figure>
+						<h2 class="custom_font_responsive">DUBLIN, IRELAND</h2>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="festival_date_box">
+						<h2 class="custom_font_responsive">21-22/04/2021</h2>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="festival_common_box"></div>
+					<div class="email_box_home">
+						<form id="emailForm" method="post" action="email_successful.html" onsubmit="validateEmail();">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								size="40"
+								value="Sign up for updates: enter your email address here and press Enter"
+							/>
+						</form>
 					</div>
 					<div class="festival_common_box"></div>
-					<div class="festival_date_box">
-						<figure class="change-ratio">
-							<img src="date.png" alt="April 20th 2021" />
-						</figure>
-					</div>
 				</div>
-			</div>
-
-			<div class="container">
-				<div class="festival_common_box"></div>
-				<div class="email_box_home">
-					<form
-						id="emailForm"
-						method="GET"
-						action="email_successful.html"
-						onsubmit="validateEmail();"
-					>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							size="50"
-							value="Sign up for updates: enter your email address here and press Enter."
-						/>
-					</form>
-				</div>
-				<div class="festival_common_box"></div>
 			</div>
 		</section>
 
@@ -186,6 +178,5 @@
 				><i class="fa fa-chevron-up"></i
 			></a>
 		</div>
-		
 	</body>
 </html>

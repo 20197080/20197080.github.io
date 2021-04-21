@@ -3,11 +3,10 @@ juarez.css
 Author: Juarez Barbosa Junior - Student ID 20197080 
 */
 
-/* configuration of flex box layout container*/ 
+/* configuration of flex box layout container*/
 .container {
 	display: flex;
 }
-
 
 /* styling for container div x - flex box layout info */
 .container > div {
@@ -36,17 +35,24 @@ h3 {
 }
 
 /* styling for the oval effect element in the home page  - flex box layout info, image,color,  etc */
-.oval {
-	height: 450px;
-	width: 900px;
+.oval {	
+
+	width: 50%;
+	height: 0;
+	font-size: 20px;
+	
+	text-align: center;
+	line-height: 0;
+	padding: 25% 0;
+	border-radius: 50%;	
+
 	background-color: #f67313;
-	border-radius: 50%;
 	position: relative;
-	top: 80px;
-	left: 280px;
+	top: 60px;
+	left: 350px;
 }
 
-/* styling for the rectangle effect element in the about page - flex box layout info, image,color,  etc */
+/* styling for the rectangle effect element in email page - flex box layout info, image,color,  etc */
 .rectangle {
 	height: 330px;
 	width: 600px;
@@ -67,39 +73,47 @@ h3 {
 
 /* styling for title element - flex box layout info */
 .festival_home_title {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+}
+
+/* styling for location element - flex box layout info */
+.festival_location_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
 	position: relative;
-	top: 40px;
-	left: 20px;
+	top: 60px;
+	left: -100px;	
+}
+
+/* styling for date box element - flex box layout info */
+.festival_date_box {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+	position: relative;
+	top: 5px;
+	left: 140px;
 }
 
 /* styling for date element - flex box layout info */
 .festival_home_date {
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
+	position: relative;
 	position: relative;
 	top: 5px;
 	left: 250px;
 }
 
-/* styling for location element - flex box layout info */
-.festival_location_box {
-	align-items: flex-start;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 2;
-	position: relative;
-	top: 60px;
-	left: 130px;
-}
 
-/* styling for date box element - flex box layout info */
-.festival_date_box {
-	align-items: flex-end;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 2;
-	position: relative;
-	top: 60px;
-	left: 50px;
-}
 
 /* styling for email box in contact us - flex box layout, font family info */
 .email_box_contact_us {
@@ -108,7 +122,7 @@ h3 {
 	justify-content: center; /* axis X */
 	flex-grow: 1;
 	position: relative;
-	top: 80px;
+	top: 30px;
 	left: -60px;
 	font-family: Fira Sans, sans-serif;
 }
@@ -120,9 +134,20 @@ h3 {
 	justify-content: center; /* axis X */
 	flex-grow: 1;
 	position: relative;
-	top: -60px;
-	left: 60px;
+	top: 20px;
+	left: 10px;
 	font-family: Fira Sans, sans-serif;
 }
 
+.contact_us {
+	position: relative;
+	top: 60px;
+	left: 20px;
+}
 
+.custom_font_responsive {
+	font-size:2vw;
+	font-family: Fira Sans, sans-serif;
+	color: black;
+	text-align: center;
+}
