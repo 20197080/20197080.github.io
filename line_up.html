@@ -5,7 +5,7 @@
 		<meta name="description" content="Festival Portal - Line Up" />
 		<!-- web page title -->
 		<title>Rock and Pop Festival - Line Up</title>
-		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live">
+		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live" />
 		<!-- Authors: Juarez, Claudia, Shane -->
 		<meta name="author" content="Juarez, Claudia, Shane" />
 		<!--responsive design adjustments-->
@@ -94,7 +94,7 @@
 				<div class="container">
 					<div class="festival_common_box"></div>
 					<div class="festival_home_title">
-						<img src="festival_title_alone.png" alt="Pop and Rock Festival" />
+						<img class="img-fluid" src="festival_title_alone.png" alt="Pop and Rock Festival" />
 					</div>
 					<div class="festival_common_box"></div>
 				</div>
@@ -103,7 +103,7 @@
 					<div class="container">
 						<div class="festival_common_box"></div>
 						<div class="festival_bands">
-							<img src="bands.png" alt="Full line up" />
+							<img class="img-fluid" src="bands.png" alt="Full line up" />
 						</div>
 						<div div class="festival_common_box">
 							<p class="custom_font_word_cloud">DMITRI VEGAS & LIKE MIKE</p>
@@ -118,25 +118,29 @@
 				</div>
 
 				<tr>
+					<!-- Email Sign-up Section Form-->
 					<div class="container">
-						<div class="festival_common_box"></div>
 						<div class="email_box_lineup">
-							<form
-								id="emailForm"
-								method="post"
-								action="email_successful.html"
-								onsubmit="validateEmail();"
-							>
-								<input
-									type="email"
-									id="email"
-									name="email"
-									size="100"
-									value="Sign up for updates: enter your email address here and press Enter"
-								/>
-							</form>
+							<div class="col-lg-8 mx-auto">
+								<form id="emailForm" name="emailForm" novalidate="novalidate">
+									<div class="control-group">
+										<div class="form-group floating-label-form-group controls mb-0 pb-2">
+											<input
+												class="form-control"
+												id="email"
+												type="email"
+												placeholder="Email"
+												required="required"
+												value="Sign-up for updates: enter your email address here"
+												data-validation-required-message="To sign-up, please enter your email"
+												size="100"
+											/>
+											<p class="help-block text-danger"></p>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
-						<div class="festival_common_box"></div>
 					</div>
 				</tr>
 			</table>

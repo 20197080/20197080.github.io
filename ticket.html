@@ -92,8 +92,36 @@
 		<section class="page-section portfolio" id="portfolio">
 			<div class="container">
 				<div class="festival_common_box"></div>
-				<div class="">
-					<img src="tickets.png" alt="Tickets" />
+				<div>
+					<img class="img-fluid" src="tickets.png" alt="Tickets" />
+				</div>
+				<div class="festival_common_box"></div>
+			</div>
+
+			<div class="container">
+				<div class="festival_common_box"></div>
+				<div>
+					<img class="img-fluid" src="date.png" alt="Dates" />
+				</div>
+				<div class="festival_common_box"></div>
+			</div>
+
+			<div class="container">
+				<div class="festival_common_box"></div>
+				<div>
+					<img class="img-fluid img_round" src="1_day_pass.png" alt="One day pass" />
+				</div>
+				<div class="festival_common_box"></div>
+
+				<div class="festival_common_box"></div>
+				<div>
+					<img class="img-fluid img_round" src="2_day_pass.png" alt="Two day pass" />
+				</div>
+				<div class="festival_common_box"></div>
+
+				<div class="festival_common_box"></div>
+				<div>
+					<img class="img-fluid img_round" src="weekend_pass.png" alt="Weekend pass" />
 				</div>
 				<div class="festival_common_box"></div>
 			</div>
@@ -101,54 +129,34 @@
 			<div class="container">
 				<div class="festival_common_box"></div>
 				<div class="">
-					<img src="date.png" alt="Dates" />
+					<img class="img-fluid" src="buy_now.png" alt="Buy now" />
 				</div>
 				<div class="festival_common_box"></div>
 			</div>
 
+			<!-- Email Sign-up Section Form-->
 			<div class="container">
-				<div class="festival_common_box"></div>
-				<div class="img_round">
-					<img src="1_day_pass.png" class="img_round" alt="One day pass" />
+				<div class="email_box_lineup">
+					<div class="col-lg-8 mx-auto">
+						<form id="emailForm" name="emailForm" novalidate="novalidate">
+							<div class="control-group">
+								<div class="form-group floating-label-form-group controls mb-0 pb-2">
+									<input
+										class="form-control"
+										id="email"
+										type="email"
+										placeholder="Email"
+										required="required"
+										value="Sign-up for updates: enter your email address here"
+										data-validation-required-message="To sign-up, please enter your email"
+										size="100"
+									/>
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="festival_common_box"></div>
-
-				<div class="festival_common_box"></div>
-				<div class="img_round">
-					<img src="2_day_pass.png" class="img_round" alt="Two day pass" />
-				</div>
-				<div class="festival_common_box"></div>
-
-				<div class="festival_common_box"></div>
-				<div class="img_round">
-					<img src="weekend_pass.png" class="img_round" alt="Weekend pass" />
-				</div>
-				<div class="festival_common_box"></div>
-			</div>
-
-			<div class="container">
-				<div class="festival_common_box"></div>
-				<div class="">
-					<img src="buy_now.png" alt="Buy now" />
-				</div>
-				<div class="festival_common_box"></div>
-			</div>
-
-			<div class="container">
-				<div class="festival_common_box"></div>
-				<div class="email_box_tickets">
-					<form id="emailForm" method="post" action="email_successful.html">
-						<input
-							type="email"
-							id="emailAddress"
-							name="emailAddress"
-							size="80"
-							value="Sign up for updates: enter your email address here and press Enter"
-						/>
-				
-					</form>
-				</div>
-				<div class="festival_common_box"></div>
 			</div>
 		</section>
 

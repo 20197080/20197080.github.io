@@ -45,7 +45,7 @@ img {
 /* styling for festival name element - flex box layout info, font, etc */
 .custom_font_festival_name {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	position: relative;
 	top: -20px;
@@ -55,14 +55,14 @@ img {
 /* styling for custom font */
 .custom_font {
 	font-family: Fira Sans, sans-serif;
-	font-size: 30px;
+	font-size:2vw;
 	color: black;
 }
 
 /* styling for custom world cloud */
 .custom_font_word_cloud {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	top: 30px;
 	left: 80px;
@@ -71,7 +71,7 @@ img {
 /* styling for custom world cloud 1 */
 .custom_font_word_cloud_position_1 {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	position: relative;
 	top: 20px;
@@ -81,7 +81,7 @@ img {
 /* styling for custom world cloud 2 */
 .custom_font_word_cloud_position_2 {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	position: relative;
 	top: 10px;
@@ -91,7 +91,7 @@ img {
 /* styling for custom world cloud 3 */
 .custom_font_word_cloud_position_3 {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	position: relative;
 	top: 60px;
@@ -101,7 +101,7 @@ img {
 /* styling for custom world cloud 4 */
 .custom_font_word_cloud_position_4 {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	position: relative;
 	top: 90px;
@@ -111,7 +111,7 @@ img {
 /* styling for custom world cloud 5 */
 .custom_font_word_cloud_position_5 {
 	font-family: Fira Sans, sans-serif;
-	font-size: 23px;
+	font-size:2vw;
 	color: black;
 	position: relative;
     top: -10px;
