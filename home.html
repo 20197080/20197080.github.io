@@ -113,9 +113,16 @@
 
 				<!-- Email Sign-up Section Form-->
 				<div class="container">
-					<div class="email_box_lineup">
+					<div class="email_box_home">
 						<div class="col-lg-8 mx-auto">
-							<form id="emailForm" name="emailForm" novalidate="novalidate">
+							<form
+								id="emailForm"
+								name="emailForm"								
+								method="post"
+								action="./email_successful.html"
+								onsubmit="return validateEmailSubscribe();"
+								novalidate
+							>
 								<div class="control-group">
 									<div class="form-group floating-label-form-group controls mb-0 pb-2">
 										<input
@@ -135,7 +142,6 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</section>
 

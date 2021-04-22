@@ -130,13 +130,15 @@ h3 {
 
 /* styling for email box in home - flex box layout, font family info */
 .email_box_home {
+
+
 	align-items: center;
 	align-content: center; /* cross Y */
 	justify-content: center; /* axis X */
 	flex-grow: 1;
 	position: relative;
-	top: 20px;
-	left: 10px;
+	top: 10px;
+	left: 0px;
 	font-family: Fira Sans, sans-serif;
 }
 

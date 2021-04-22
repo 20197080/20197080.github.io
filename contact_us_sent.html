@@ -4,12 +4,11 @@
 		<!-- Festival Portal - Landing Page -->
 		<meta name="description" content="Festival Portal - Line Up" />
 		<!-- web page title -->
-		<title>Rock and Pop Festival - Line Up</title>
-		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live" />
+		<title>Rock and Pop Festival - Contact Us - Thank you!</title>
 		<!-- Authors: Juarez, Claudia, Shane -->
 		<meta name="author" content="Juarez, Claudia, Shane" />
 		<!--responsive design adjustments-->
-		<meta name="viewport" content="height=device-height,width=device-width" />
+		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" />
 		<!-- Character set -->
 		<meta charset="utf-8" />
 		<!-- Favicon-->
@@ -26,10 +25,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
 		<!-- Bootstrap CSS file -->
 		<link href="bootstrap_styles.css" rel="stylesheet" />
-		<!-- Claudia's CSS file -->
-		<link href="claudia.css" rel="stylesheet" />
+		<!-- Juarez's CSS file -->
+		<link href="juarez.css" rel="stylesheet" />
 		<!-- Rock and Pop's CSS file-->
 		<link href="music_festival.css" rel="stylesheet" />
+
 		<!-- jquery related CSSes-->
 		<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
 		<link rel="stylesheet" type="text/css" href="jquery-ui.theme.css" />
@@ -39,12 +39,10 @@
 		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="jquery.validate.js"></script>
 		<script type="text/javascript" src="jquery-ui.js"></script>
-		<!-- Rock and Pop JS file -->
-		<script type="text/javascript" src="music_festival.js"></script>
 		<!--overhang js file -->
 		<script type="text/javascript" src="overhang.min.js"></script>
 	</head>
-	<body onload="loginSuccessfulLineUp();">
+	<body id="page-top">
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
 			<div class="container">
@@ -86,71 +84,17 @@
 			</div>
 		</nav>
 
-		<!-- Content Section-->
+		<!-- Content Section - Email Sent -->
 		<section class="page-section portfolio" id="portfolio">
-			<table>
-				<th id="heading"></th>
-
+			<div class="rectangle">
 				<div class="container">
-					<div class="festival_common_box"></div>
-					<div class="festival_home_title">
-						<img class="img-fluid" src="festival_title_alone.png" alt="Pop and Rock Festival" />
+					<div class="festival_painted_box"></div>
+					<div class="festival_common_box">
+						<h2 class="custom_font">We received your feedback! Thanks a lot!</h2>
 					</div>
-					<div class="festival_common_box"></div>
+					<div class="festival_painted_box"><img src="contact_us_thank_you.png" alt="Email sent" /></div>
 				</div>
-
-				<div class="oval_lineup">
-					<div class="container">
-						<div class="festival_common_box"></div>
-						<div class="festival_bands">
-							<img class="img-fluid" src="bands.png" alt="Full line up" />
-						</div>
-						<div div class="festival_common_box">
-							<p class="custom_font_word_cloud">DMITRI VEGAS & LIKE MIKE</p>
-							<p class="custom_font_word_cloud_position_1">DAY DIN</p>
-							<p class="custom_font_word_cloud_position_2">TIESTO</p>
-							<p class="custom_font_word_cloud_position_3">AKASHA</p>
-							<p class="custom_font_word_cloud_position_4">DJ MAU</p>
-							<p class="custom_font_word_cloud_position_5">CHEMICAL BROTHERS</p>
-						</div>
-						<div class="festival_common_box"></div>
-					</div>
-				</div>
-
-				<tr>
-					<!-- Email Sign-up Section Form-->
-					<div class="container">
-						<div class="email_box_lineup">
-							<div class="col-lg-8 mx-auto">
-								<form
-									id="emailForm"
-									name="emailForm"
-									method="post"
-									action="./email_successful.html"
-									onsubmit="return validateEmailSubscribe();"
-									novalidate
-								>
-									<div class="control-group">
-										<div class="form-group floating-label-form-group controls mb-0 pb-2">
-											<input
-												class="form-control"
-												id="email"
-												type="email"
-												placeholder="Email"
-												required="required"
-												value="Sign-up for updates: enter your email address here"
-												data-validation-required-message="To sign-up, please enter your email"
-												size="100"
-											/>
-											<p class="help-block text-danger"></p>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</tr>
-			</table>
+			</div>
 		</section>
 
 		<!-- Footer-->
@@ -204,5 +148,16 @@
 				><i class="fa fa-chevron-up"></i
 			></a>
 		</div>
+
+		<!-- Bootstrap core JS-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Third party plugin JS-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		<!-- Contact form JS-->
+		<script src="jqBootstrapValidation.js"></script>
+
+		<!-- Core theme JS-->
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

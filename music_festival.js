@@ -51,6 +51,21 @@ function validatePhoneNumber() {
 }
 
 //function to validate the user name with custom overhang error messages
+function validateEmailSubscribe() {
+
+    var emailAddress = jQuery("#email").val();
+
+    if (emailAddress == "" || emailAddress == "Sign-up for updates: enter your email address here") {
+        jQuery("form").overhang({
+            type: "error",
+            duration: 2,
+            message: "Please provide your email address!"
+        });
+        return false;
+    } else { return true; }
+}
+
+//function to validate the user name with custom overhang error messages
 function validateMessage() {
 
     var message = jQuery("#message").val();
