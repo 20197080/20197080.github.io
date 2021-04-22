@@ -118,7 +118,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 mx-auto">
-						<form id="contactForm" name="sentMessage" novalidate="novalidate">
+						<form
+							id="contactForm"
+							name="contactForm"
+							method="post"
+							action="./email_successful.html"
+							onsubmit="return validateContactUsDetails();"
+							novalidate
+						>
 							<div class="control-group">
 								<div class="form-group floating-label-form-group controls mb-0 pb-2">
 									<label>Name</label>
@@ -181,7 +188,12 @@
 							<br />
 							<div id="success"></div>
 							<div class="form-group">
-								<button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">
+								<button
+									class="btn btn-primary btn-xl"
+									id="sendMessageButton"
+									type="submit"
+									
+									>
 									Send
 								</button>
 							</div>

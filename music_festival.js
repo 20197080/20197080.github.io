@@ -1,14 +1,66 @@
 // music_festival.js 
 //Author: Juarez Barbosa Junior - Student ID 20197080 
 
+function validateContactUsDetails() {
+    return (validateUserName() && validateEmail() && validatePhoneNumber() && validateMessage);
+}
+
 //function to validate the user name with custom overhang error messages
-function validateEmail() {    
-    var emailAddress = document.forms["emailForm"]["email"].value.trim();
+function validateUserName() {
+
+    var name = jQuery("#name").val();
+
+    if (name == "") {
+        jQuery("form").overhang({
+            type: "error",
+            duration: 2,
+            message: "Please provide your Name!"
+        });
+        return false;
+    } else { return true; }
+}
+
+//function to validate the user name with custom overhang error messages
+function validateEmail() {
+
+    var emailAddress = jQuery("#email").val();
+
     if (emailAddress == "") {
         jQuery("form").overhang({
             type: "error",
             duration: 2,
             message: "Please provide your email address!"
+        });
+        return false;
+    } else { return true; }
+}
+
+//function to validate the user name with custom overhang error messages
+function validatePhoneNumber() {
+
+    var phoneNumber = jQuery("#phone").val();
+
+    if (phoneNumber == "") {
+        jQuery("form").overhang({
+            type: "error",
+            duration: 2,
+            message: "Please provide your phone number!"
+        });
+        return false;
+    } else { return true; }
+}
+
+//function to validate the user name with custom overhang error messages
+function validateMessage() {
+
+    var message = jQuery("#message").val();
+    var messageLength = message.length;
+
+    if (message == "" || messageLength == 0) {
+        jQuery("form").overhang({
+            type: "error",
+            duration: 2,
+            message: "Please provide a message!"
         });
         return false;
     } else { return true; }
