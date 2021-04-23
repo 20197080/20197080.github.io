@@ -92,58 +92,62 @@
 
 		<!-- Portfolio Section-->
 		<section class="page-section portfolio" id="portfolio">
-			<div class="oval">
-				<div class="container">
-					<div class="festival_home_title">
-						<h2 class="custom_font_responsive">ROCK AND POP FESTIVAL</h2>
-					</div>
+			<!-- Masthead-->
+		<header class="masthead bg-primary text-white text-center">
+			<div class="container d-flex align-items-center flex-column">
+				<!-- Masthead Avatar Image-->
+				<img class="masthead-avatar mb-5" src="vinyls-music-festival.jpg" alt="" />
+				<!-- Masthead Heading-->
+				<h1 class="masthead-heading text-uppercase mb-0">Rock and Pop</h1>
+				<!-- Icon Divider-->
+				<div class="divider-custom divider-light">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+					<div class="divider-custom-line"></div>
 				</div>
+				<!-- Masthead Subheading-->
+				<p class="masthead-subheading font-weight-light mb-0">Music Festival - Culture - Art</p>
+			</div>
+		</header>
 
-				<div class="container">
-					<div class="festival_location_box">
-						<h2 class="custom_font_responsive">DUBLIN, IRELAND</h2>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="festival_date_box">
-						<h2 class="custom_font_responsive">21-22/04/2021</h2>
-					</div>
-				</div>
-
-				<!-- Email Sign-up Section Form-->
-				<div class="container">
-					<div class="email_box_home">
-						<div class="col-lg-8 mx-auto">
-							<form
-								id="emailForm"
-								name="emailForm"								
-								method="post"
-								action="email_successful.html"
-								onsubmit="return validateEmailSubscribe();"
-								novalidate
-							>
-								<div class="control-group">
-									<div class="form-group floating-label-form-group controls mb-0 pb-2">
-										<input
-											class="form-control"
-											id="email"
-											type="email"
-											placeholder="Email"
-											required="required"
-											value="Sign-up for updates: enter your email address here"
-											data-validation-required-message="To sign-up, please enter your email"
-											size="100"
-										/>
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-							</form>
+		<!-- Email Sign-up Section Form-->
+		<div class="container">
+			<div class="email_box_home">
+				<div class="col-lg-8 mx-auto">
+					<form
+						id="emailForm"
+						name="emailForm"								
+						method="post"
+						action="email_successful.html"
+						onsubmit="return validateEmailSubscribe();"
+						novalidate
+					>
+						<div class="control-group">
+							<div class="form-group floating-label-form-group controls mb-0 pb-2">
+								<input
+									class="form-control"
+									id="email"
+									type="email"
+									placeholder="Email"
+									required="required"
+									value="Sign-up for updates: enter your email address here"
+									data-validation-required-message="To sign-up, please enter your email"
+									size="100"
+								/>
+								<p class="help-block text-danger"></p>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
+		</div>
+	</div>
 		</section>
+
+		
+
+				
+
 
 		<!-- Footer-->
 		<footer class="footer text-center">

@@ -179,16 +179,3 @@ img {
 }
 
 
-/* configuration of flex box layout container*/ 
-.container {
-	display: flex;
-}
-
-
-/* styling for container div x - flex box layout info */
-.container > div {
-	font-size: 1.5vw;
-	font-family: Fira-Sans;
-	padding: 0.25em;
-	color: #1abc9c;
-}

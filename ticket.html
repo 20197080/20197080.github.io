@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<!-- Festival Portal - Landing Page -->
-		<meta name="description" content="Festival Portal - Tickets" />
+		<meta name="description" content="Festival Portal - Landing Page" />
 		<!-- web page title -->
 		<title>Rock and Pop Festival - Tickets</title>
 		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live" />
@@ -12,10 +12,13 @@
 		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0" />
 		<!-- Character set -->
 		<meta charset="utf-8" />
-		<!-- Favicon-->
+		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!-- Font Awesome icons (free version)-->
-		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Third party plugin JS-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		<!-- Google fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
 		<link
@@ -24,12 +27,16 @@
 			type="text/css"
 		/>
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
+		<!-- Font Awesome icons (free version)-->
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 		<!-- Bootstrap CSS file -->
 		<link href="bootstrap_styles.css" rel="stylesheet" />
+
+		<!-- Core theme JS-->
+		<script src="scripts.js"></script>
+
 		<!-- Shane's CSS file -->
 		<link href="shane.css" rel="stylesheet" />
-		<!-- Rock and Pop's CSS file-->
-		<link href="music_festival.css" rel="stylesheet" />
 
 		<!-- jquery related CSSes-->
 		<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
@@ -46,11 +53,12 @@
 		<!--overhang js file -->
 		<script type="text/javascript" src="overhang.min.js"></script>
 	</head>
+
 	<body onload="loginSuccessfulTickets();">
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
 			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="https://20197080.github.io/">Rock and Pop</a>
+				<a class="navbar-brand js-scroll-trigger" href="https://20197080.github.io/"> Rock and Pop</a>
 				<button
 					class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
 					type="button"
@@ -88,52 +96,49 @@
 			</div>
 		</nav>
 
-		<!-- Content Section-->
-		<section class="page-section portfolio" id="portfolio">
+		<!-- About Section-->
+		<section class="page-section bg-primary text-white mb-0" id="about">
 			<div class="container">
-				<div class="festival_common_box"></div>
-				<div>
-					<img class="img-fluid" src="tickets.png" alt="Tickets" />
+				<!-- About Section Heading-->
+				<h2></h2>
+				<h2 class="page-section-heading text-center text-uppercase text-white">Tickets</h2>
+				<!-- Icon Divider-->
+				<div class="divider-custom divider-light">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+					<div class="divider-custom-line"></div>
 				</div>
-				<div class="festival_common_box"></div>
+				<!-- About Section Content-->
+				<div class="row">
+					<div class="col-lg-4 ml-auto">
+						<p class="lead">Rock and Pop is Ireland's most famous music festival.</p>
+					</div>
+					<div class="col-lg-4 mr-auto">
+						<p class="lead">Buy your ticket now! 1, 2 days or weekend passes available!</p>
+					</div>
+				</div>
+				<!-- About Section Button-->
+				<div class="text-center mt-4">
+					<a class="btn btn-xl btn-outline-light" href="ticket.html">
+						<i class="fas fa-download mr-2"></i>
+						BUY NOW
+					</a>
+				</div>
+				<div class="text-center mt-4">
+					<a class="btn btn-xl" href="ticket.html">
+						<img class="img-fluid img_round" src="1_day_pass.png" alt="One day pass" />
+					</a>
+					<a class="btn btn-xl" href="ticket.html">
+						<img class="img-fluid img_round" src="2_day_pass.png" alt="Two day pass" />
+					</a>
+					<a class="btn btn-xl" href="ticket.html">
+						<img class="img-fluid img_round" src="weekend_pass.png" alt="Weekend pass" />
+					</a>
+				</div>
 			</div>
+		</section>
 
-			<div class="container">
-				<div class="festival_common_box"></div>
-				<div>
-					<img class="img-fluid" src="date.png" alt="Dates" />
-				</div>
-				<div class="festival_common_box"></div>
-			</div>
-
-			<div class="container">
-				<div class="festival_common_box"></div>
-				<div>
-					<img class="img-fluid img_round" src="1_day_pass.png" alt="One day pass" />
-				</div>
-				<div class="festival_common_box"></div>
-
-				<div class="festival_common_box"></div>
-				<div>
-					<img class="img-fluid img_round" src="2_day_pass.png" alt="Two day pass" />
-				</div>
-				<div class="festival_common_box"></div>
-
-				<div class="festival_common_box"></div>
-				<div>
-					<img class="img-fluid img_round" src="weekend_pass.png" alt="Weekend pass" />
-				</div>
-				<div class="festival_common_box"></div>
-			</div>
-
-			<div class="container">
-				<div class="festival_common_box"></div>
-				<div class="">
-					<img class="img-fluid" src="buy_now.png" alt="Buy now" />
-				</div>
-				<div class="festival_common_box"></div>
-			</div>
-
+		<section>
 			<!-- Email Sign-up Section Form-->
 			<div class="container">
 				<div class="email_box_lineup">
@@ -154,9 +159,9 @@
 										type="email"
 										placeholder="Email"
 										required="required"
-										value="Sign-up for updates: enter your email address here"
+										value="Sign-up for updates: please enter your email address here"
 										data-validation-required-message="To sign-up, please enter your email"
-										size="100"
+										size="90"
 									/>
 									<p class="help-block text-danger"></p>
 								</div>
@@ -217,6 +222,8 @@
 			<a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"
 				><i class="fa fa-chevron-up"></i
 			></a>
-		</div>
+		</div>	
+	
 	</body>
 </html>
+

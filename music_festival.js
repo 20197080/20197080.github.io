@@ -100,7 +100,7 @@ function loginSuccessfulLineUp() {
 }
 
 //function present a successful login message on the order page
-function loginSuccessfulTickets() {
+function loginSuccessfulTickets() {    
     jQuery("body").overhang({
         type: "success",
         duration: 2,

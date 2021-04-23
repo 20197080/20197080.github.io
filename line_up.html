@@ -2,20 +2,23 @@
 <html lang="en">
 	<head>
 		<!-- Festival Portal - Landing Page -->
-		<meta name="description" content="Festival Portal - Line Up" />
+		<meta name="description" content="Festival Portal - Landing Page" />
 		<!-- web page title -->
-		<title>Rock and Pop Festival - Line Up</title>
+		<title>Rock and Pop Festival - Tickets</title>
 		<meta name="keywords" content="music, festival, rock, pop, ireland, dublin, dj, live" />
 		<!-- Authors: Juarez, Claudia, Shane -->
 		<meta name="author" content="Juarez, Claudia, Shane" />
 		<!--responsive design adjustments-->
-		<meta name="viewport" content="height=device-height,width=device-width" />
+		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0" />
 		<!-- Character set -->
 		<meta charset="utf-8" />
-		<!-- Favicon-->
+		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!-- Font Awesome icons (free version)-->
-		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Third party plugin JS-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		<!-- Google fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
 		<link
@@ -24,12 +27,14 @@
 			type="text/css"
 		/>
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
+		<!-- Font Awesome icons (free version)-->
+		<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 		<!-- Bootstrap CSS file -->
 		<link href="bootstrap_styles.css" rel="stylesheet" />
-		<!-- Claudia's CSS file -->
-		<link href="claudia.css" rel="stylesheet" />
-		<!-- Rock and Pop's CSS file-->
-		<link href="music_festival.css" rel="stylesheet" />
+
+		<!-- Core theme JS-->
+		<script src="scripts.js"></script>
+
 		<!-- jquery related CSSes-->
 		<link rel="stylesheet" type="text/css" href="jquery-ui.css" />
 		<link rel="stylesheet" type="text/css" href="jquery-ui.theme.css" />
@@ -39,16 +44,18 @@
 		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="jquery.validate.js"></script>
 		<script type="text/javascript" src="jquery-ui.js"></script>
+
 		<!-- Rock and Pop JS file -->
 		<script type="text/javascript" src="music_festival.js"></script>
 		<!--overhang js file -->
 		<script type="text/javascript" src="overhang.min.js"></script>
 	</head>
+
 	<body onload="loginSuccessfulLineUp();">
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
 			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="https://20197080.github.io/">Rock and Pop</a>
+				<a class="navbar-brand js-scroll-trigger" href="https://20197080.github.io/"> Rock and Pop</a>
 				<button
 					class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
 					type="button"
@@ -86,71 +93,136 @@
 			</div>
 		</nav>
 
-		<!-- Content Section-->
+
+		<!-- Portfolio Section-->
 		<section class="page-section portfolio" id="portfolio">
-			<table>
-				<th id="heading"></th>
-
-				<div class="container">
-					<div class="festival_common_box"></div>
-					<div class="festival_home_title">
-						<img class="img-fluid" src="festival_title_alone.png" alt="Pop and Rock Festival" />
-					</div>
-					<div class="festival_common_box"></div>
+			<div class="container"></div>
+			<div class="container">
+				<!-- Portfolio Section Heading-->
+				<h2></h2>
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Line-up</h2>
+				<!-- Icon Divider-->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+					<div class="divider-custom-line"></div>
 				</div>
-
-				<div class="oval_lineup">
-					<div class="container">
-						<div class="festival_common_box"></div>
-						<div class="festival_bands">
-							<img class="img-fluid" src="bands.png" alt="Full line up" />
-						</div>
-						<div div class="festival_common_box">
-							<p class="custom_font_word_cloud">DMITRI VEGAS & LIKE MIKE</p>
-							<p class="custom_font_word_cloud_position_1">DAY DIN</p>
-							<p class="custom_font_word_cloud_position_2">TIESTO</p>
-							<p class="custom_font_word_cloud_position_3">AKASHA</p>
-							<p class="custom_font_word_cloud_position_4">DJ MAU</p>
-							<p class="custom_font_word_cloud_position_5">CHEMICAL BROTHERS</p>
-						</div>
-						<div class="festival_common_box"></div>
-					</div>
-				</div>
-
-				<tr>
-					<!-- Email Sign-up Section Form-->
-					<div class="container">
-						<div class="email_box_lineup">
-							<div class="col-lg-8 mx-auto">
-								<form
-									id="emailForm"
-									name="emailForm"
-									method="post"
-									action="email_successful.html"
-									onsubmit="return validateEmailSubscribe();"
-									novalidate
-								>
-									<div class="control-group">
-										<div class="form-group floating-label-form-group controls mb-0 pb-2">
-											<input
-												class="form-control"
-												id="email"
-												type="email"
-												placeholder="Email"
-												required="required"
-												value="Sign-up for updates: enter your email address here"
-												data-validation-required-message="To sign-up, please enter your email"
-												size="100"
-											/>
-											<p class="help-block text-danger"></p>
-										</div>
-									</div>
-								</form>
+				<!-- Portfolio Grid Items-->
+				<div class="row justify-content-center">
+					<!-- Portfolio Item 1-->
+					<div class="col-md-6 col-lg-4 mb-5">
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+							<div
+								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+							>
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
 							</div>
+							<img class="img-fluid" src="akasha.png" alt="" />
 						</div>
 					</div>
-				</tr>
-			</table>
+					<!-- Portfolio Item 2-->
+					<div class="col-md-6 col-lg-4 mb-5">
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+							<div
+								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+							>
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="astrix.png" alt="" />
+						</div>
+					</div>
+					<!-- Portfolio Item 3-->
+					<div class="col-md-6 col-lg-4 mb-5">
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+							<div
+								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+							>
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="djmau.png" alt="" />
+						</div>
+					</div>
+					<!-- Portfolio Item 4-->
+					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+							<div
+								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+							>
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="dmitri_vegas_like_mike.png" alt="" />
+						</div>
+					</div>
+					<!-- Portfolio Item 5-->
+					<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+							<div
+								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+							>
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="tiesto.png" alt="" />
+						</div>
+					</div>
+					<!-- Portfolio Item 6-->
+					<div class="col-md-6 col-lg-4">
+						<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+							<div
+								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+							>
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-fluid" src="day_din.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<!-- Email Sign-up Section Form-->
+			<div class="container">
+				<div class="email_box_lineup">
+					<div class="col-lg-8 mx-auto">
+						<form
+							id="emailForm"
+							name="emailForm"
+							method="post"
+							action="email_successful.html"
+							onsubmit="return validateEmailSubscribe();"
+							novalidate
+						>
+							<div class="control-group">
+								<div class="form-group floating-label-form-group controls mb-0 pb-2">
+									<input
+										class="form-control"
+										id="email"
+										type="email"
+										placeholder="Email"
+										required="required"
+										value="Sign-up for updates: please enter your email address here"
+										data-validation-required-message="To sign-up, please enter your email"
+										size="95"
+									/>
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- Footer-->
@@ -203,6 +275,315 @@
 			<a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"
 				><i class="fa fa-chevron-up"></i
 			></a>
+		</div>
+		<!-- Portfolio Modals-->
+		<!-- Portfolio Modal 1-->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModal1"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModal1Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fas fa-times"></i></span>
+					</button>
+					<div class="modal-body text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2
+										class="portfolio-modal-title text-secondary text-uppercase mb-0"
+										id="portfolioModal1Label"
+									>
+										Akasha
+									</h2>
+									<!-- Icon Divider-->
+									<div class="divider-custom">
+										<div class="divider-custom-line"></div>
+										<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+										<div class="divider-custom-line"></div>
+									</div>
+									<!-- Portfolio Modal - Image-->
+									<img class="img-fluid rounded mb-5" src="akasha.png" alt="" />
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-5">
+										DJ Akasha loves deep house mixed with mystic poetry. Ideally he plays at
+										intimate venues for a crowd of 'worldly' people. His sets take you on a journey
+										through the orient. Private sensual parties are his favorite.
+									</p>
+									<button class="btn btn-primary" data-dismiss="modal">
+										<i class="fas fa-times fa-fw"></i>
+										Close Window
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 2-->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModal2"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModal2Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fas fa-times"></i></span>
+					</button>
+					<div class="modal-body text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2
+										class="portfolio-modal-title text-secondary text-uppercase mb-0"
+										id="portfolioModal2Label"
+									>
+										ASTRIX
+									</h2>
+									<!-- Icon Divider-->
+									<div class="divider-custom">
+										<div class="divider-custom-line"></div>
+										<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+										<div class="divider-custom-line"></div>
+									</div>
+									<!-- Portfolio Modal - Image-->
+									<img class="img-fluid rounded mb-5" src="astrix.png" alt="" />
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-5">
+										Avi Shmailov under his stage name Astrix, is an Israeli trance music DJ and
+										producer specializing in the subgenre of Progressive psychedelic trance. In 2006
+										Astrix reached #41 in DJMag's "Top 100 DJs" yearly rank along with a rise of
+										several other Israeli musicians, marking a significant proportion of the Israeli
+										electronic music scene. In 2007, Astrix reached #18 on the list
+									</p>
+									<button class="btn btn-primary" data-dismiss="modal">
+										<i class="fas fa-times fa-fw"></i>
+										Close Window
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 3-->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModal3"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModal3Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fas fa-times"></i></span>
+					</button>
+					<div class="modal-body text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2
+										class="portfolio-modal-title text-secondary text-uppercase mb-0"
+										id="portfolioModal3Label"
+									>
+										DJ MAU
+									</h2>
+									<!-- Icon Divider-->
+									<div class="divider-custom">
+										<div class="divider-custom-line"></div>
+										<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+										<div class="divider-custom-line"></div>
+									</div>
+									<!-- Portfolio Modal - Image-->
+									<img class="img-fluid rounded mb-5" src="djmau.png" alt="" />
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-5">
+										Influenced by the american and european underground movement, Mau Mau started
+										his DJ career at the legendary Madame Sata Club, São Paulo 1987. One of the
+										pioneers of the electronic music in Brazil, he was the resident DJ at
+										Sra.Krawitz club and Hell's Club, the club that was responsable for
+										disseminating the electronic music in Brazil.
+									</p>
+									<button class="btn btn-primary" data-dismiss="modal">
+										<i class="fas fa-times fa-fw"></i>
+										Close Window
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 4-->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModal4"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModal4Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fas fa-times"></i></span>
+					</button>
+					<div class="modal-body text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2
+										class="portfolio-modal-title text-secondary text-uppercase mb-0"
+										id="portfolioModal4Label"
+									>
+										Dmitri Vegas & Like Mike
+									</h2>
+									<!-- Icon Divider-->
+									<div class="divider-custom">
+										<div class="divider-custom-line"></div>
+										<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+										<div class="divider-custom-line"></div>
+									</div>
+									<!-- Portfolio Modal - Image-->
+									<img class="img-fluid rounded mb-5" src="dmitri_vegas_like_mike.png" alt="" />
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-5">
+										Dimitri Vegas & Like Mike are a Greek/Belgian DJ duo composed of brothers
+										Dimitri Thivaios and Michael Thivaios. They were ranked No. 1 in 2015 and 2019,
+										and were ranked No. 2 in 2014, 2016, 2017, 2018 and 2020 on DJ Mag's Top 100 DJs
+										list.
+									</p>
+									<button class="btn btn-primary" data-dismiss="modal">
+										<i class="fas fa-times fa-fw"></i>
+										Close Window
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 5-->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModal5"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModal5Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fas fa-times"></i></span>
+					</button>
+					<div class="modal-body text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2
+										class="portfolio-modal-title text-secondary text-uppercase mb-0"
+										id="portfolioModal5Label"
+									>
+										Tiesto
+									</h2>
+									<!-- Icon Divider-->
+									<div class="divider-custom">
+										<div class="divider-custom-line"></div>
+										<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+										<div class="divider-custom-line"></div>
+									</div>
+									<!-- Portfolio Modal - Image-->
+									<img class="img-fluid rounded mb-5" src="tiesto.png" alt="" />
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-5">
+										Tijs Michiel Verwest OON, known professionally as Tiësto, is a Dutch DJ and
+										record producer from Breda, North Brabant. He was named "the Greatest DJ of All
+										Time" by Mix magazine in a poll voted by the fans. In 2013, he was voted by DJ
+										Mag readers as the "best DJ of the last 20 years"
+									</p>
+									<button class="btn btn-primary" data-dismiss="modal">
+										<i class="fas fa-times fa-fw"></i>
+										Close Window
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio Modal 6-->
+		<div
+			class="portfolio-modal modal fade"
+			id="portfolioModal6"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="portfolioModal6Label"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="fas fa-times"></i></span>
+					</button>
+					<div class="modal-body text-center">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<!-- Portfolio Modal - Title-->
+									<h2
+										class="portfolio-modal-title text-secondary text-uppercase mb-0"
+										id="portfolioModal6Label"
+									>
+										Day Din
+									</h2>
+									<!-- Icon Divider-->
+									<div class="divider-custom">
+										<div class="divider-custom-line"></div>
+										<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+										<div class="divider-custom-line"></div>
+									</div>
+									<!-- Portfolio Modal - Image-->
+									<img class="img-fluid rounded mb-5" src="day_din.png" alt="" />
+									<!-- Portfolio Modal - Text-->
+									<p class="mb-5">
+										Day.din aka Deniz Aydin started his musical career not only by kick-drumming
+										with about 4 and a half month before birth with a hard driven 4-to-the-floor
+										beat as his mother keeps telling with her eyes rolling, no, he also joined the
+										house infected party crowd when he was about 16 years old, totally impressed by
+										what he was exposed to on psytrance parties.
+									</p>
+									<button class="btn btn-primary" data-dismiss="modal">
+										<i class="fas fa-times fa-fw"></i>
+										Close Window
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
