@@ -2,7 +2,11 @@
 //Author: Juarez Barbosa Junior - Student ID 20197080 
 
 function validateContactUsDetails() {
-    return (validateUserName() && validateEmail() && validatePhoneNumber() && validateMessage);
+    return (validateUserName() && validateEmail() && validateEmailFormat() && validatePhoneNumber() && validateMessage());
+}
+
+function validatePaymentDetails(){
+    
 }
 
 //function to validate the user name with custom overhang error messages
@@ -15,6 +19,20 @@ function validateUserName() {
             type: "error",
             duration: 2,
             message: "Please provide your Name!"
+        });
+        return false;
+    } else { return true; }
+}
+
+function validateEmailFormat() {
+
+    var emailAddress = jQuery("#email").val();
+
+    if (!(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailAddress))) {
+        jQuery("form").overhang({
+            type: "error",
+            duration: 2,
+            message: "Please provide a valid email format!"
         });
         return false;
     } else { return true; }
@@ -65,24 +83,39 @@ function validateEmailSubscribe() {
     } else { return true; }
 }
 
+//function - help to remove white spaces from fields
+function removeWhiteSpaces(str) {
+    return str.replace(/\s/g, '');
+}
+
 //function to validate the user name with custom overhang error messages
 function validateMessage() {
 
-    var message = jQuery("#message").val();
-    var messageLength = message.length;
+    var message = removeWhiteSpaces(jQuery("#message").val());
 
-    if (message == "" || messageLength == 0) {
+    if (message == '') {
         jQuery("form").overhang({
             type: "error",
             duration: 2,
-            message: "Please provide a message!"
+            message: "Please provide a valid message!"
         });
         return false;
+    }
+    else {
+        return true;
+    }
+
+
+
+
+
+    if (message == "" || messageLength == 0) {
+
     } else { return true; }
 }
 
 //function present a successful login message on the order page
-function loginSuccessfulHome() {
+function showMessageBannerForHome() {
     jQuery("body").overhang({
         type: "success",
         duration: 2,
@@ -91,7 +124,7 @@ function loginSuccessfulHome() {
 }
 
 //function present a successful login message on the order page
-function loginSuccessfulLineUp() {
+function showMessageBannerForLineUp() {
     jQuery("body").overhang({
         type: "success",
         duration: 2,
@@ -100,7 +133,7 @@ function loginSuccessfulLineUp() {
 }
 
 //function present a successful login message on the order page
-function loginSuccessfulTickets() {    
+function showMessageBannerForTickets() {
     jQuery("body").overhang({
         type: "success",
         duration: 2,
@@ -109,7 +142,7 @@ function loginSuccessfulTickets() {
 }
 
 //function present a successful login message on the order page
-function loginSuccessfulContactUs() {
+function showMessageBannerForContactUs() {
     jQuery("body").overhang({
         type: "success",
         duration: 2,
