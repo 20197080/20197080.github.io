@@ -24,34 +24,6 @@ h3 {
 	font-family: Fira Sans, sans-serif;
 }
 
-/* styling for the main logo - flex box layout info, image, etc */
-.main_logo {
-	width: 150px;
-	height: 150px;
-	padding: 15px;
-	background-image: url('festival_name.png');
-	border: 1px solid black;
-	background-size: contain;
-}
-
-/* styling for the oval effect element in the home page  - flex box layout info, image,color,  etc */
-.oval {	
-
-	width: 50%;
-	height: 0;
-	font-size: 20px;
-	
-	text-align: center;
-	line-height: 0;
-	padding: 25% 0;
-	border-radius: 50%;	
-
-	background-color: #f67313;
-	position: relative;
-	top: 60px;
-	left: 350px;
-}
-
 /* styling for the rectangle effect element in email page - flex box layout info, image,color,  etc */
 .rectangle {
 	height: 330px;
@@ -62,76 +34,9 @@ h3 {
 	left: 450px;
 }
 
-.rectangle_email_sent {
-	height: 110px;
-	width: 295px;
-	background-color: #1abc9c;
-	position: relative;
-	top: 50px;
-	left: 450px;
-}
-
-/* styling for title element - flex box layout info */
-.festival_home_title {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-	top: -100px;
-}
-
-/* styling for location element - flex box layout info */
-.festival_location_box {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-	position: relative;
-	top: 60px;
-	left: -100px;	
-}
-
-/* styling for date box element - flex box layout info */
-.festival_date_box {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-	position: relative;
-	top: 5px;
-	left: 140px;
-}
-
-/* styling for date element - flex box layout info */
-.festival_home_date {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-	position: relative;
-	position: relative;
-	top: 5px;
-	left: 250px;
-}
-
-
-
-/* styling for email box in contact us - flex box layout, font family info */
-.email_box_contact_us {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-	position: relative;
-	top: 30px;
-	left: -60px;
-	font-family: Fira Sans, sans-serif;
-}
-
 /* styling for email box in home - flex box layout, font family info */
 .email_box_home {
-
-
+	
 	align-items: center;
 	align-content: center; /* cross Y */
 	justify-content: center; /* axis X */
@@ -142,15 +47,11 @@ h3 {
 	font-family: Fira Sans, sans-serif;
 }
 
-.contact_us {
-	position: relative;
-	top: 60px;
-	left: 20px;
-}
-
-.custom_font_responsive {
-	font-size:2vw;
-	font-family: Fira Sans, sans-serif;
-	color: black;
-	text-align: center;
+/* styling for painted  box - flex box layout, color */
+.festival_painted_box {
+	background-color: #1abc9c;
+	align-items: center;
+	align-content: center; /* cross Y */
+	justify-content: center; /* axis X */
+	flex-grow: 1;
 }

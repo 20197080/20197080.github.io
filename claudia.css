@@ -4,6 +4,11 @@ Author: Claudia dos Anjos - Student ID 20220111
 */
 
 /* configuration of flex box layout container*/ 
+
+img {
+	filter: grayscale(100%);
+  }
+
 .container {
 	display: flex;
 }
@@ -16,78 +21,8 @@ Author: Claudia dos Anjos - Student ID 20220111
 	color: #1abc9c;
 }
 
-/* styling for the home_title - flex box layout info */
-.festival_home_title {
-	position: relative;
-	top: 15px;
-	left: 10px;
-}
-
-/* styling for the bands cloud - flex box layout info */
-.festival_bands {
-	position: relative;
-	top: 80px;
-	left: 40px;
-}
-
-/* styling for the line up oval figure - flex box layout info */
-.oval_lineup {
-	height: 380px;
-	width: 975px;
-	background-color: #f67313;
-	border-radius: 50%;
-	position: relative;
-	top: 40px;
-	left: 260px;
-}
-
-/* styling modification for img - image margin */
-.change-ratio img {
-	margin: -20% 0;
-}
-
-/* styling for common box - flex box layout info */
-.festival_common_box {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-}
-
-/* styling for bands box - flex box layout info */
-.festival_bands_box {
-	align-items: center;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 1;
-}
-
-/* styling for label box - flex box layout info */
-.festival_label_box {
-	align-items: center;
-	align-content: flex-start; /* cross Y */
-	justify-content: left; /* axis X */
-	flex-grow: 1;
-	font-family: Fira-Sans;
-}
-
-/* styling for location box - flex box layout info */
-.festival_location_box {
-	align-items: flex-start;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 2;
-}
-
-.festival_date_box {
-	align-items: flex-end;
-	align-content: center; /* cross Y */
-	justify-content: center; /* axis X */
-	flex-grow: 2;
-}
-
 /* styling for email lineup box - flex box layout info */
-.email_box_lineup {
+.email_box_common {
 	align-items: center;
 	align-content: center; /* cross Y */
 	justify-content: center; /* axis X */
@@ -97,3 +32,5 @@ Author: Claudia dos Anjos - Student ID 20220111
 	left: -20px;
 	font-family: Fira Sans, sans-serif;
 }
+
+
